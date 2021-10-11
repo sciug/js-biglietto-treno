@@ -8,13 +8,18 @@ document.getElementById("km").textContent = distance
  if (userAge < 18){
      var discount = price*20/100;
      console.log("discount equals:" + discount);
+     document.getElementById("discount").textContent = discount
      var finalPrice = price - discount;
      console.log("Final price equals: " + finalPrice.toFixed(2));
+     document.getElementById("price").textContent = finalPrice.toFixed(2)
 } else if (userAge > 65){
     var discount = price*40/100;
     console.log("discount equals:" + discount);
+    document.getElementById("discount").textContent = discount
     var finalPrice = price - discount;
-     console.log("Final price equals: " + finalPrice.toFixed(2));
+    console.log("Final price equals: " + finalPrice.toFixed(2));
+    document.getElementById("price").textContent = finalPrice.toFixed(2)
+
     
 }else{
     console.log(price)
