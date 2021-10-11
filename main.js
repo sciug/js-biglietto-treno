@@ -14,4 +14,7 @@ const price = distance * 0.21
     var finalPrice = price - discount;
      console.log("Final price equals: " + finalPrice.toFixed(2));
     
+}else{
+    var finalPrice = price - discount;
+     console.log("Final price equals: " + finalPrice.toFixed(2));
 }
