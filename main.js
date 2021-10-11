@@ -8,4 +8,10 @@ const price = distance * 0.21
      console.log("discount equals:" + discount);
      var finalPrice = price - discount;
      console.log("Final price equals: " + finalPrice.toFixed(2));
-} 
+} else if (userAge > 65){
+    var discount = price*40/100;
+    console.log("discount equals:" + discount);
+    var finalPrice = price - discount;
+     console.log("Final price equals: " + finalPrice.toFixed(2));
+    
+}
