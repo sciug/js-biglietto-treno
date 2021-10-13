@@ -45,9 +45,28 @@
 body{background-color: whitesmoke;}
 
 
+.header{
+    background-color: white;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0px 0px 10px rgb(197, 195, 195);
+    
+}
+
+.header_content{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    
+}
+.header_logo_wrapper{
+    width: 300px;
+}
+
+
 .box_container{
    align-items: center;
-   margin-top: 2rem;
+   margin-top: 2.5rem;
 
 }
 
@@ -157,3 +176,6 @@ select, input{
     margin-left: auto;
 }
 
+.none{
+    display: none;
+}

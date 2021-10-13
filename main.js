@@ -22,6 +22,8 @@ generate.addEventListener("click", function(){
      document.getElementById("T-name").textContent = fullName.value
      document.getElementById("T-email").textContent = email.value
      document.getElementById("train_code").textContent = Math.floor(Math.random() * 1000000) + 100000;
+     const ticket=document.getElementById("ticket")
+     ticket.classList.remove("none")
 
 
      if (age.value == "young"){
@@ -49,6 +51,9 @@ generate.addEventListener("click", function(){
 
 
 cancel.addEventListener("click",  function(){
+     const ticket=document.getElementById("ticket")
+     ticket.classList.add("none")
+
      document.getElementById("T-age").textContent = ""
      document.getElementById("T-km").textContent = ""
      document.getElementById("T-name").textContent = ""
