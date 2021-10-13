@@ -9,7 +9,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
-<body>
+<body id="body">
+
+    <div class="box_container d_flex justify_center">
+        <div class="box">
+            <div class="form_wrapper d_flex_column">
+                <div class="form_inputs d_flex justify_spaceBet">
+                    <div class="input_group d_flex_column align_end">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="full-name" id="full-name">
+                    </div>
+                    <div class="input_group d_flex_column align_end">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="input_group d_flex_column align_end">
+                        <label for="distance">Distance</label>
+                        <input type="number" name="distance" id="distance">
+                    </div>
+                    <div class="input_group d_flex_column align_end">
+                        <label for="age">age</label>
+                        <select name="age" id="age">
+                            <option value="adult">adult</option>
+                            <option value="young">young</option>
+                            <option value="senior">senior</option>
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="form_btns align_self">
+                    <button class="btn" id="generate">genera</button>
+                    <button class="btn btn_modifier" id="cancel">cancella</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
     <div class="box_container d_flex justify_center">
         <div class="box d_flex_column">
             <div class="logo_wrapper">
@@ -21,26 +57,26 @@
                 <div class="user_info">
                     <div class="d_flex user_info_wrapper">
                         <p class="email">email:</p>
-                        <p id="email"></p>
+                        <p id="T-email"></p>
                     </div>
                     <div class="d_flex user_info_wrapper">
                         <p class="name">name:</p>
-                        <p id="name"></p>
+                        <p id="T-name"></p>
                     </div>
                     <div class="d_flex user_info_wrapper">
                         <p class="age">age:</p>
-                        <p id="age"></p>
+                        <p id="T-age"></p>
                     </div>
                     <div class="d_flex user_info_wrapper">
                         <p class="km">km:</p>
-                        <p id="km"></p>
+                        <p id="T-km"></p>
                     </div>
                                         
                 </div>
                 <div class="discount_container">
                     <p class="discount">discount: <span id="discount">none</span> </p>
                     <i class="fas fa-barcode"></i>
-                    <p class="train_code">train code: <span id="train_code">654827397421</span></p>
+                    <p class="train_code">train code: <span id="train_code"></span></p>
                 </div>
                
 
