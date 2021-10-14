@@ -193,3 +193,15 @@ select, input{
 .none{
     display: none;
 }
+
+.bar_code{display: flex;
+margin: 1rem 0;}
+.bar{
+    content: "";
+    height: 70px;
+    background-color: #6e6e6e;
+   }
+
+.margin_bar{
+    margin: 0 1px;
+}

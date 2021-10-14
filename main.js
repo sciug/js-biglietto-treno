@@ -24,6 +24,17 @@ generate.addEventListener("click", function(){
      document.getElementById("train_code").textContent = Math.floor(Math.random() * 1000000) + 100000;
      const ticket=document.getElementById("ticket")
      ticket.classList.remove("none")
+     const barCodeContainer = document.getElementById("bar_code")
+     for(let i=0; i < 30; i++){
+          let singleBar = `<div class="bar bar-${i}"></div>`
+          barCodeContainer.insertAdjacentHTML("beforeend", singleBar)
+          let randomWidth = Math.floor(Math.random() * 5 +1);
+          barWidth = document.getElementsByClassName("bar")
+          barWidth[i].style.width=`${randomWidth}px`
+          barWidth[i].classList.add("margin_bar")
+    
+         
+     } 
 
 
      if (age.value == "young"){
@@ -59,12 +70,21 @@ cancel.addEventListener("click",  function(){
      document.getElementById("T-name").textContent = ""
      document.getElementById("T-email").textContent = ""
      document.getElementById("train_code").textContent = ""
-     document.getElementById("discount").textContent = ""
+     document.getElementById("discount").textContent = "none"
      document.getElementById("price").textContent = ""
-      distance.value = ""
-      age.value = "adult"
-      email.value= ""
-      fullName.value = "" 
-
+     distance.value = ""
+     age.value = "adult"
+     email.value= ""
+     fullName.value = "" 
+     const barCodeContainer = document.getElementById("bar_code")
+     for(let i=0; i < 30; i++){
+          let singleBar = `<div class="bar bar-${i}"></div>`
+          barCodeContainer.insertAdjacentHTML("beforeend", singleBar)
+          let randomWidth = Math.floor(Math.random() * 5 +1);
+          barWidth = document.getElementsByClassName("bar")
+          barWidth[i].style.width=`0px`
+    
+         
+     } 
 })
  
